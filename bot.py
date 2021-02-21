@@ -1,3 +1,4 @@
+import handlers
 from webhook import dp, WEBHOOK_PATH, on_startup, on_shutdown, WEBAPP_HOST, WEBAPP_PORT
 from aiogram.utils.executor import start_webhook, start_polling
 from config import IS_LOCAL
