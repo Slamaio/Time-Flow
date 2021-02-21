@@ -3,7 +3,7 @@ from aiogram.utils.executor import start_webhook, start_polling
 from config import IS_LOCAL
 
 if __name__ == "__main__":
-    if IS_LOCAL == "True":
+    if IS_LOCAL == 1:
         start_polling(dispatcher=dp, on_startup=on_startup, on_shutdown=on_shutdown, skip_updates=True)
     else:
         start_webhook(
